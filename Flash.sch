@@ -1,0 +1,337 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5FF0D2D8
+P 5650 3400
+AR Path="/5FF0D2D8" Ref="#PWR?"  Part="1" 
+AR Path="/5FEE69CD/5FF0D2D8" Ref="#PWR0129"  Part="1" 
+F 0 "#PWR0129" H 5650 3150 50  0001 C CNN
+F 1 "GND" V 5655 3272 50  0000 R CNN
+F 2 "" H 5650 3400 50  0001 C CNN
+F 3 "" H 5650 3400 50  0001 C CNN
+	1    5650 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FF0D2DE
+P 5150 2800
+AR Path="/5FF0D2DE" Ref="#PWR?"  Part="1" 
+AR Path="/5FEE69CD/5FF0D2DE" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 5150 2650 50  0001 C CNN
+F 1 "+3V3" H 5165 2973 50  0000 C CNN
+F 2 "" H 5150 2800 50  0001 C CNN
+F 3 "" H 5150 2800 50  0001 C CNN
+	1    5150 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FF0D2E4
+P 6450 3800
+AR Path="/5FF0D2E4" Ref="#PWR?"  Part="1" 
+AR Path="/5FEE69CD/5FF0D2E4" Ref="#PWR0131"  Part="1" 
+F 0 "#PWR0131" H 6450 3650 50  0001 C CNN
+F 1 "+3V3" V 6465 3928 50  0000 L CNN
+F 2 "" H 6450 3800 50  0001 C CNN
+F 3 "" H 6450 3800 50  0001 C CNN
+	1    6450 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF0D2EA
+P 6300 3800
+AR Path="/5FF0D2EA" Ref="R?"  Part="1" 
+AR Path="/5FEE69CD/5FF0D2EA" Ref="R14"  Part="1" 
+F 0 "R14" V 6093 3800 50  0000 C CNN
+F 1 "10K" V 6184 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6230 3800 50  0001 C CNN
+F 3 "~" H 6300 3800 50  0001 C CNN
+	1    6300 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FF0D2F0
+P 5650 3300
+AR Path="/5FF0D2F0" Ref="#PWR?"  Part="1" 
+AR Path="/5FEE69CD/5FF0D2F0" Ref="#PWR0132"  Part="1" 
+F 0 "#PWR0132" H 5650 3150 50  0001 C CNN
+F 1 "+3V3" V 5665 3428 50  0000 L CNN
+F 2 "" H 5650 3300 50  0001 C CNN
+F 3 "" H 5650 3300 50  0001 C CNN
+	1    5650 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF0D2F6
+P 5150 3600
+AR Path="/5FF0D2F6" Ref="#PWR?"  Part="1" 
+AR Path="/5FEE69CD/5FF0D2F6" Ref="#PWR0133"  Part="1" 
+F 0 "#PWR0133" H 5150 3350 50  0001 C CNN
+F 1 "GND" H 5155 3427 50  0000 C CNN
+F 2 "" H 5150 3600 50  0001 C CNN
+F 3 "" H 5150 3600 50  0001 C CNN
+	1    5150 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_Flash:W25Q128JVS U?
+U 1 1 5FF0D2FC
+P 5150 3200
+AR Path="/5FF0D2FC" Ref="U?"  Part="1" 
+AR Path="/5FEE69CD/5FF0D2FC" Ref="U4"  Part="1" 
+F 0 "U4" H 5150 3781 50  0000 C CNN
+F 1 "W25Q128JVS" H 5150 3690 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 5150 3200 50  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf" H 5150 3200 50  0001 C CNN
+	1    5150 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5650 3100 2    50   Input ~ 0
+SPI0_MISO
+Text GLabel 5650 3000 2    50   Input ~ 0
+SPI0_MOSI
+Text GLabel 4650 3300 0    50   Input ~ 0
+SPI0_CLK
+Text GLabel 4650 3100 0    50   Input ~ 0
+NOR_CS
+$Comp
+L tf:tf U?
+U 1 1 5FF0D307
+P 5450 5800
+AR Path="/5FF0D307" Ref="U?"  Part="1" 
+AR Path="/5FEE69CD/5FF0D307" Ref="U3"  Part="1" 
+F 0 "U3" H 5600 6717 50  0000 C CNN
+F 1 "tf" H 5600 6626 50  0000 C CNN
+F 2 "tf:tf_lock" H 6700 5350 50  0001 C CNN
+F 3 "" H 6700 5350 50  0001 C CNN
+	1    5450 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 5FF4E942
+P 3100 4950
+F 0 "R23" H 3170 4996 50  0000 L CNN
+F 1 "R" H 3170 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3030 4950 50  0001 C CNN
+F 3 "~" H 3100 4950 50  0001 C CNN
+	1    3100 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 5FF4ED24
+P 3350 4950
+F 0 "R24" H 3420 4996 50  0000 L CNN
+F 1 "R" H 3420 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3280 4950 50  0001 C CNN
+F 3 "~" H 3350 4950 50  0001 C CNN
+	1    3350 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 5FF4EF14
+P 3600 4950
+F 0 "R25" H 3670 4996 50  0000 L CNN
+F 1 "R" H 3670 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3530 4950 50  0001 C CNN
+F 3 "~" H 3600 4950 50  0001 C CNN
+	1    3600 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 5FF4F0A3
+P 3850 4950
+F 0 "R26" H 3920 4996 50  0000 L CNN
+F 1 "R" H 3920 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3780 4950 50  0001 C CNN
+F 3 "~" H 3850 4950 50  0001 C CNN
+	1    3850 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R27
+U 1 1 5FF4F24F
+P 4100 4950
+F 0 "R27" H 4170 4996 50  0000 L CNN
+F 1 "R" H 4170 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4030 4950 50  0001 C CNN
+F 3 "~" H 4100 4950 50  0001 C CNN
+	1    4100 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5300 4100 5100
+Wire Wire Line
+	4100 5300 4750 5300
+Wire Wire Line
+	4750 5400 3850 5400
+Wire Wire Line
+	3850 5400 3850 5100
+Wire Wire Line
+	4750 5500 3600 5500
+Wire Wire Line
+	3600 5500 3600 5100
+Wire Wire Line
+	3350 5900 3350 5100
+Wire Wire Line
+	3350 5900 4750 5900
+Wire Wire Line
+	4750 6000 3100 6000
+Wire Wire Line
+	3100 6000 3100 5100
+Text GLabel 3000 5300 0    50   Input ~ 0
+SDC0_D2
+Text GLabel 3000 5400 0    50   Input ~ 0
+SDC0_D3
+Text GLabel 3000 5500 0    50   Input ~ 0
+SDC0_CMD
+Text GLabel 3000 5700 0    50   Input ~ 0
+SDC0_CLK
+Text GLabel 3000 5900 0    50   Input ~ 0
+SDC0_D0
+Text GLabel 3000 6000 0    50   Input ~ 0
+SDC0_D1
+Wire Wire Line
+	3850 5400 3000 5400
+Connection ~ 3850 5400
+Wire Wire Line
+	4100 5300 3000 5300
+Connection ~ 4100 5300
+Wire Wire Line
+	3600 5500 3000 5500
+Connection ~ 3600 5500
+Wire Wire Line
+	3000 5700 4750 5700
+Wire Wire Line
+	3350 5900 3000 5900
+Connection ~ 3350 5900
+Wire Wire Line
+	3100 6000 3000 6000
+Connection ~ 3100 6000
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FF5C4C3
+P 3600 4800
+AR Path="/5FF5C4C3" Ref="#PWR?"  Part="1" 
+AR Path="/5FEE69CD/5FF5C4C3" Ref="#PWR0137"  Part="1" 
+F 0 "#PWR0137" H 3600 4650 50  0001 C CNN
+F 1 "+3V3" H 3615 4973 50  0000 C CNN
+F 2 "" H 3600 4800 50  0001 C CNN
+F 3 "" H 3600 4800 50  0001 C CNN
+	1    3600 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 3350 4800
+Wire Wire Line
+	3350 4800 3100 4800
+Connection ~ 3600 4800
+Wire Wire Line
+	3600 4800 3350 4800
+Connection ~ 3850 4800
+Wire Wire Line
+	3850 4800 3600 4800
+Wire Wire Line
+	4100 4800 3850 4800
+$Comp
+L power:+3V3 #PWR0166
+U 1 1 5FF5EC54
+P 4750 5600
+F 0 "#PWR0166" H 4750 5450 50  0001 C CNN
+F 1 "+3V3" V 4765 5728 50  0000 L CNN
+F 2 "" H 4750 5600 50  0001 C CNN
+F 3 "" H 4750 5600 50  0001 C CNN
+	1    4750 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0167
+U 1 1 5FF5F5DA
+P 4750 5800
+F 0 "#PWR0167" H 4750 5550 50  0001 C CNN
+F 1 "GND" V 4755 5672 50  0000 R CNN
+F 2 "" H 4750 5800 50  0001 C CNN
+F 3 "" H 4750 5800 50  0001 C CNN
+	1    4750 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0168
+U 1 1 5FF5FE8A
+P 4750 6200
+F 0 "#PWR0168" H 4750 5950 50  0001 C CNN
+F 1 "GND" V 4755 6072 50  0000 R CNN
+F 2 "" H 4750 6200 50  0001 C CNN
+F 3 "" H 4750 6200 50  0001 C CNN
+	1    4750 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0169
+U 1 1 5FF602A9
+P 6450 6200
+F 0 "#PWR0169" H 6450 5950 50  0001 C CNN
+F 1 "GND" V 6455 6072 50  0000 R CNN
+F 2 "" H 6450 6200 50  0001 C CNN
+F 3 "" H 6450 6200 50  0001 C CNN
+	1    6450 6200
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6800 3200 0    50   Input ~ 0
+SPI0_CS
+Text GLabel 6800 3100 0    50   Input ~ 0
+NOR_CS
+Text GLabel 6150 3800 0    50   Input ~ 0
+NOR_CS
+Wire Wire Line
+	6800 3100 6800 3200
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5FFA2E52
+P 5400 4250
+AR Path="/5FFA2E52" Ref="SW?"  Part="1" 
+AR Path="/5FF13259/5FFA2E52" Ref="SW?"  Part="1" 
+AR Path="/5FEE69CD/5FFA2E52" Ref="SW2"  Part="1" 
+F 0 "SW2" V 5446 4202 50  0000 R CNN
+F 1 "SW_Push" V 5355 4202 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK" H 5400 4450 50  0001 C CNN
+F 3 "~" H 5400 4450 50  0001 C CNN
+	1    5400 4250
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5400 4050 2    50   Input ~ 0
+SPI0_MISO
+$Comp
+L power:GND #PWR?
+U 1 1 5FFA3EB4
+P 5400 4450
+AR Path="/5FFA3EB4" Ref="#PWR?"  Part="1" 
+AR Path="/5FEE69CD/5FFA3EB4" Ref="#PWR0191"  Part="1" 
+F 0 "#PWR0191" H 5400 4200 50  0001 C CNN
+F 1 "GND" H 5405 4277 50  0000 C CNN
+F 2 "" H 5400 4450 50  0001 C CNN
+F 3 "" H 5400 4450 50  0001 C CNN
+	1    5400 4450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

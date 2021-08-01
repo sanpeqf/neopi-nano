@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name allwinner-v3s)(type Legacy)(uri ${KIPRJMOD}/lib/allwinner-v3s.lib)(options "")(descr ""))
+  (lib (name f1c100s)(type Legacy)(uri ${KIPRJMOD}/lib/f1c100s.lib)(options "")(descr ""))
+  (lib (name tf)(type Legacy)(uri ${KIPRJMOD}/lib/tf.lib)(options "")(descr ""))
+  (lib (name PJ3F07-5P)(type Legacy)(uri ${KIPRJMOD}/lib/PJ3F07-5P.lib)(options "")(descr ""))
+  (lib (name AOS3729A-T42-NXC)(type Legacy)(uri ${KIPRJMOD}/lib/AOS3729A-T42-NXC.lib)(options "")(descr ""))
+  (lib (name ns2009)(type Legacy)(uri ${KIPRJMOD}/lib/ns2009.lib)(options "")(descr ""))
+)

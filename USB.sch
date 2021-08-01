@@ -1,0 +1,313 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5FFEC486
+P 3300 3600
+AR Path="/5FF67EAA/5FFEC486" Ref="J?"  Part="1" 
+AR Path="/5FFEA145/5FFEC486" Ref="J2"  Part="1" 
+F 0 "J2" H 3357 4067 50  0000 C CNN
+F 1 "USB_B_Micro" H 3357 3976 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 3450 3550 50  0001 C CNN
+F 3 "~" H 3450 3550 50  0001 C CNN
+	1    3300 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 3600 3600 2    50   Input ~ 0
+CH340_USB_DP
+Text GLabel 3600 3700 2    50   Input ~ 0
+CH340_USB_DN
+$Comp
+L power:+5V #PWR?
+U 1 1 5FFEC48E
+P 5150 4450
+AR Path="/5FF67EAA/5FFEC48E" Ref="#PWR?"  Part="1" 
+AR Path="/5FFEA145/5FFEC48E" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 5150 4300 50  0001 C CNN
+F 1 "+5V" V 5165 4578 50  0000 L CNN
+F 2 "" H 5150 4450 50  0001 C CNN
+F 3 "" H 5150 4450 50  0001 C CNN
+	1    5150 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FFEC494
+P 3600 3800
+AR Path="/5FF67EAA/5FFEC494" Ref="#PWR?"  Part="1" 
+AR Path="/5FFEA145/5FFEC494" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 3600 3550 50  0001 C CNN
+F 1 "GND" V 3605 3672 50  0000 R CNN
+F 2 "" H 3600 3800 50  0001 C CNN
+F 3 "" H 3600 3800 50  0001 C CNN
+	1    3600 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FFEC49A
+P 3250 4000
+AR Path="/5FF67EAA/5FFEC49A" Ref="#PWR?"  Part="1" 
+AR Path="/5FFEA145/5FFEC49A" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 3250 3750 50  0001 C CNN
+F 1 "GND" H 3255 3827 50  0000 C CNN
+F 2 "" H 3250 4000 50  0001 C CNN
+F 3 "" H 3250 4000 50  0001 C CNN
+	1    3250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4000 3250 4000
+Connection ~ 3250 4000
+Wire Wire Line
+	3250 4000 3200 4000
+Text Notes 4500 5050 0    50   ~ 0
+USB Port
+Text GLabel 3550 5450 2    50   Input ~ 0
+USB-DP
+Text GLabel 3550 5550 2    50   Input ~ 0
+USB-DN
+Wire Wire Line
+	3150 5850 3250 5850
+$Comp
+L power:GND #PWR?
+U 1 1 5FFFA426
+P 3150 5850
+AR Path="/5FFFA426" Ref="#PWR?"  Part="1" 
+AR Path="/5FE57E8F/5FFFA426" Ref="#PWR?"  Part="1" 
+AR Path="/5FFEA145/5FFFA426" Ref="#PWR0158"  Part="1" 
+F 0 "#PWR0158" H 3150 5600 50  0001 C CNN
+F 1 "GND" V 3155 5722 50  0000 R CNN
+F 2 "" H 3150 5850 50  0001 C CNN
+F 3 "" H 3150 5850 50  0001 C CNN
+	1    3150 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5FFFA42D
+P 3250 5450
+AR Path="/5FFFA42D" Ref="J?"  Part="1" 
+AR Path="/5FE57E8F/5FFFA42D" Ref="J?"  Part="1" 
+AR Path="/5FFEA145/5FFFA42D" Ref="J1"  Part="1" 
+F 0 "J1" H 3307 5917 50  0000 C CNN
+F 1 "USB_B_Micro" H 3307 5826 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 3400 5400 50  0001 C CNN
+F 3 "~" H 3400 5400 50  0001 C CNN
+	1    3250 5450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 5850
+$Comp
+L Power_Protection:SRV05-4 U8
+U 1 1 5FFFEE01
+P 7250 4400
+F 0 "U8" H 7250 5081 50  0000 C CNN
+F 1 "SRV05-4" H 7250 4990 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 7950 3950 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 7250 4400 50  0001 C CNN
+	1    7250 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 4500 2    50   Input ~ 0
+CH340_USB_DP
+Text GLabel 6750 4300 0    50   Input ~ 0
+CH340_USB_DN
+Text GLabel 7750 4300 2    50   Input ~ 0
+USB-DP
+Text GLabel 6750 4500 0    50   Input ~ 0
+USB-DN
+$Comp
+L Device:D D7
+U 1 1 5FE39FE4
+P 5000 4450
+F 0 "D7" H 5000 4233 50  0000 C CNN
+F 1 "D" H 5000 4324 50  0000 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 5000 4450 50  0001 C CNN
+F 3 "~" H 5000 4450 50  0001 C CNN
+	1    5000 4450
+	-1   0    0    1   
+$EndComp
+Text GLabel 3550 5250 2    50   Input ~ 0
+USB_IN
+Text GLabel 3600 3400 2    50   Input ~ 0
+USB_IN
+Text GLabel 4850 4450 0    50   Input ~ 0
+USB_IN
+$Comp
+L power:GND #PWR0157
+U 1 1 5FE5090F
+P 7250 4900
+F 0 "#PWR0157" H 7250 4650 50  0001 C CNN
+F 1 "GND" H 7255 4727 50  0000 C CNN
+F 2 "" H 7250 4900 50  0001 C CNN
+F 3 "" H 7250 4900 50  0001 C CNN
+	1    7250 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 7250 3900 1    50   Input ~ 0
+USB_IN
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5FF89012
+P 4750 5950
+F 0 "TP12" V 4945 6022 50  0000 C CNN
+F 1 "TestPoint" V 4854 6022 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4950 5950 50  0001 C CNN
+F 3 "~" H 4950 5950 50  0001 C CNN
+	1    4750 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP13
+U 1 1 5FF89958
+P 4750 6250
+F 0 "TP13" V 4945 6322 50  0000 C CNN
+F 1 "TestPoint" V 4854 6322 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4950 6250 50  0001 C CNN
+F 3 "~" H 4950 6250 50  0001 C CNN
+	1    4750 6250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5FF8A18B
+P 4750 5600
+F 0 "TP11" V 4945 5672 50  0000 C CNN
+F 1 "TestPoint" V 4854 5672 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4950 5600 50  0001 C CNN
+F 3 "~" H 4950 5600 50  0001 C CNN
+	1    4750 5600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4750 5950 2    50   Input ~ 0
+USB-DP
+Text GLabel 4750 6250 2    50   Input ~ 0
+USB-DN
+Text GLabel 4750 5600 2    50   Input ~ 0
+USB_IN
+$Comp
+L Connector:TestPoint TP14
+U 1 1 5FF8DB1E
+P 4750 6550
+F 0 "TP14" V 4945 6622 50  0000 C CNN
+F 1 "TestPoint" V 4854 6622 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4950 6550 50  0001 C CNN
+F 3 "~" H 4950 6550 50  0001 C CNN
+	1    4750 6550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF8DE65
+P 4750 6550
+AR Path="/5FF67EAA/5FF8DE65" Ref="#PWR?"  Part="1" 
+AR Path="/5FFEA145/5FF8DE65" Ref="#PWR0190"  Part="1" 
+F 0 "#PWR0190" H 4750 6300 50  0001 C CNN
+F 1 "GND" V 4755 6422 50  0000 R CNN
+F 2 "" H 4750 6550 50  0001 C CNN
+F 3 "" H 4750 6550 50  0001 C CNN
+	1    4750 6550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FE01FE6
+P 5250 4950
+AR Path="/5FE57E8F/5FE01FE6" Ref="C?"  Part="1" 
+AR Path="/5FFEA145/5FE01FE6" Ref="C40"  Part="1" 
+F 0 "C40" H 5365 4996 50  0000 L CNN
+F 1 "C" H 5365 4905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5288 4800 50  0001 C CNN
+F 3 "~" H 5250 4950 50  0001 C CNN
+	1    5250 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 5250 4800 0    50   Input ~ 0
+USB_IN
+$Comp
+L power:GND #PWR0192
+U 1 1 5FE026D7
+P 5250 5100
+F 0 "#PWR0192" H 5250 4850 50  0001 C CNN
+F 1 "GND" H 5255 4927 50  0000 C CNN
+F 2 "" H 5250 5100 50  0001 C CNN
+F 3 "" H 5250 5100 50  0001 C CNN
+	1    5250 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:SYM_ESD_Small #SYM1
+U 1 1 5FE05B30
+P 10900 6350
+F 0 "#SYM1" H 10900 6490 50  0001 C CNN
+F 1 "SYM_ESD_Small" H 10900 6225 50  0001 C CNN
+F 2 "" H 10900 6360 50  0001 C CNN
+F 3 "~" H 10900 6360 50  0001 C CNN
+	1    10900 6350
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 5650 2    50   Input ~ 0
+PE2
+$Comp
+L Device:R R?
+U 1 1 6005A1A3
+P 3850 5650
+AR Path="/6005A1A3" Ref="R?"  Part="1" 
+AR Path="/5FF13259/6005A1A3" Ref="R?"  Part="1" 
+AR Path="/5FFEA145/6005A1A3" Ref="R38"  Part="1" 
+F 0 "R38" H 3920 5696 50  0000 L CNN
+F 1 "R" H 3920 5605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3780 5650 50  0001 C CNN
+F 3 "~" H 3850 5650 50  0001 C CNN
+	1    3850 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 5650 4100 5650
+Wire Wire Line
+	3700 5650 3650 5650
+$Comp
+L Device:R R?
+U 1 1 6005A5E0
+P 3650 5850
+AR Path="/6005A5E0" Ref="R?"  Part="1" 
+AR Path="/5FF13259/6005A5E0" Ref="R?"  Part="1" 
+AR Path="/5FFEA145/6005A5E0" Ref="R37"  Part="1" 
+F 0 "R37" H 3720 5896 50  0000 L CNN
+F 1 "R" H 3720 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3580 5850 50  0001 C CNN
+F 3 "~" H 3650 5850 50  0001 C CNN
+	1    3650 5850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 5700 3650 5650
+Connection ~ 3650 5650
+Wire Wire Line
+	3650 5650 3550 5650
+$Comp
+L power:+3V3 #PWR0156
+U 1 1 6005B4B7
+P 3650 6000
+F 0 "#PWR0156" H 3650 5850 50  0001 C CNN
+F 1 "+3V3" H 3665 6173 50  0000 C CNN
+F 2 "" H 3650 6000 50  0001 C CNN
+F 3 "" H 3650 6000 50  0001 C CNN
+	1    3650 6000
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

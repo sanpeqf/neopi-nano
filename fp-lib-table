@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name f1c100s)(type KiCad)(uri ${KIPRJMOD}/lib/f1c100s.pretty)(options "")(descr ""))
+  (lib (name tf)(type KiCad)(uri ${KIPRJMOD}/lib/tf.pretty)(options "")(descr ""))
+  (lib (name audio_3f705p)(type KiCad)(uri ${KIPRJMOD}/lib/audio_3f705p.pretty)(options "")(descr ""))
+  (lib (name AOS3729A-T42-NXC)(type KiCad)(uri ${KIPRJMOD}/lib/AOS3729A-T42-NXC.pretty)(options "")(descr ""))
+)
